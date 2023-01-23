@@ -8,5 +8,5 @@ LINES=(
 	"=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~="
 );
 
-echo ${LINES[RANDOM%${#LINES[@]}]}
+echo ${LINES[RANDOM%${#LINES[@]}]} | xclip
 
