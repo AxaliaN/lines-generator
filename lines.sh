@@ -1,14 +1,11 @@
 #!/bin/bash
 
-LINES=(
+ASCII_LINES=(
     "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
     "=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^="
     "=v=v=v=v=v=v=v=v=v=v=v=v=v=v=v="
     "=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#="
     "=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~="
-    "🌝🌚🌝🌚🌝🌚🌝🌚🌝🌚🌝🌚🌝"
-    "🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕" # Mama mia!
-    "👽👽👽👽👽👽👽👽👽👽👽👽👽" # The truth is out there
     "^-_-_-^-_-_-^-_-_-^-_-_-^-_-_-^"
     "~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~"
     "x-x-x-x-x-x-x-!-x-x-x-x-x-x-x"
@@ -19,10 +16,24 @@ LINES=(
     "•──────────•°•❀•°•───────────•"
     "•⋅⋅•⊰⋅•⋅⋅•⋅⋅∙∘☽༓☾∘∙⋅⋅•⋅⊰⋅•⋅⋅•⋅⋅•"
     "✏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏"
-    "🤞i-t---i-s---w-h-a-t---i-t---i-s🤞"
     "---------/\.|).|\|./\.|\|---------"
 );
 
+EMOJI_LINES=(
+    "👽👽👽👽👽👽👽👽👽👽👽👽👽" # The truth is out there
+    "🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕" # Mama mia!
+    "🌝🌚🌝🌚🌝🌚🌝🌚🌝🌚🌝🌚🌝"
+    "🤞i-t---i-s---w-h-a-t---i-t---i-s🤞"
+);
 
-echo ${LINES[RANDOM%${#LINES[@]}]} | xclip
+if [ "$1" = "--ascii" ]; then
+    LINES=("${ASCII_LINES[@]}")
+elif [ "$1" = "--emoji" ]; then
+    LINES=("${EMOJI_LINES[@]}")
+else
+    LINES=("${ASCII_LINES[@]}" "${EMOJI_LINES[@]}")
+fi
 
+LINE=${LINES[RANDOM%${#LINES[@]}]}
+
+echo -n $LINE | xclip && echo "Copied $LINE to the clipboard"
