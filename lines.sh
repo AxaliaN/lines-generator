@@ -30,6 +30,7 @@ EMOJI_LINES=(
     "🎃💀👻🧛🦇😱😈🕸️⚰️🖤🤡🧟🐈‍⬛" # Spooky season
     "🧙🧝🧞🧜🧚🐲🧚‍♀️🧌🧝‍♂️🧝‍♀️🧙‍♂️🧙‍♀️🪄" # Dungeons & Dragons
     "🔔🎁🕯️🎅👼🎶🤶❄️☃️🌟🎄🍷🦌" # Jingle jangle all the way
+    "💎💎💎💎💎💎💎💎💎💎💎💎" # Shine bright
     "🤞i-t---i-s---w-h-a-t---i-t---i-s🤞"
 );
 
