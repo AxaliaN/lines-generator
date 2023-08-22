@@ -23,6 +23,14 @@ EMOJI_LINES=(
     "👽👽👽👽👽👽👽👽👽👽👽👽👽" # The truth is out there
     "🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕" # Mama mia!
     "🌝🌚🌝🌚🌝🌚🌝🌚🌝🌚🌝🌚🌝"
+    "♠️♥️♣️♦️♠️♥️♣️♦️♠️♥️♣️♦️♠️" # Ma ma ma pokerface
+    "🃏🃏🃏🃏🃏🃏🃏🃏🃏🃏🃏🃏🃏"
+    "🎲🎲🎲🎲🎲🎲🎲🎲🎲🎲🎲🎲🎲"
+    "🫡🫡🫡🫡🫡🫡🫡🫡🫡🫡🫡🫡🫡"
+    "🎃💀👻🧛🦇😱😈🕸️⚰️🖤🤡🧟🐈‍⬛" # Spooky season
+    "🧙🧝🧞🧜🧚🐲🧚‍♀️🧌🧝‍♂️🧝‍♀️🧙‍♂️🧙‍♀️🪄" # Dungeons & Dragons
+    "🔔🎁🕯️🎅👼🎶🤶❄️☃️🌟🎄🍷🦌" # Jingle jangle all the way
+    "💎💎💎💎💎💎💎💎💎💎💎💎" # Shine bright
     "🤞i-t---i-s---w-h-a-t---i-t---i-s🤞"
 );
 
